@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Даши</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    
+    <!-- Секция 1 -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>PORTFOLIO</h1>
+            <h1>DARIA YALOVSKAYA</h1>
+            <nav>
+                <!-- Бургер-меню -->
+                <div class="burger-menu"></div>
+                    <div class="burger-icon" id="burgerIcon">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#about">Обо мне</a></li>
+                        <li><a href="#achievements">Мои достижения</a></li>
+                        <li><a href="#skills">Мои навыки</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Секция 2 -->
+    <section class="intro" id="about">
+        <div class="container">
+            <h1>Привет! Я Даша — модель</h1>
+            <h3>Работаю с брендами</h3>
+            <p>У меня более 5 лет опыта работы с ведущими брендами в индустрии моды. Специализируюсь на модных показах, фотосессиях и рекламных кампаниях.</p>
+            <div class="buttons">
+                <a href="#contact" class="cta-button">Связаться со мной</a>
+                <a href="#achievements" class="cta-button">Перейти далее</a>
+            </div>
+        </div>
+    </br>
+        <div class="image-container">
+            <img src="daria.jpg" alt="Daria Yalovskaya" class="profile-photo">
+        </div>
+    </section>
+
+    <!-- Секция 3 -->
+    <section class="achievements" id="achievements">
+        <div class="container">
+            <h2>Мои достижения</h2>
+            <div class="achievement-cards">
+                <div class="card">
+                    <img src="certificat.jpg" alt="Сертификат">
+                    <h3>Прошла модельные курсы</h3>
+                    <p>Успешно прошла модельные курсы в MetroModel</p>
+                </div>
+                <div class="card">
+                    <img src="brand.jpg" alt="Сотрудничаю с брендами">
+                    <h3>Сотрудничаю с брендами</h3>
+                    <p>Несколько раз снималась для бренда одежды 100den, laplandiafurs и т.д.</p>
+                </div>
+                <div class="card">
+                    <img src="cheetos.jpg" alt="Снялась для Cheetos">
+                    <h3>Снялась для Cheetos</h3>
+                    <p>Снялась для известного бренда чипсов - Cheetos</p>
+                </div>
+                <div class="card">
+                    <img src="magazine.jpg" alt="Обложка журнала">
+                    <h3>Обложка журнала</h3>
+                    <p>Появилась на обложке модного журнала, укрепив свою репутацию в индустрии</p>
+                </div>
+                <div class="card">
+                    <img src="makeup.JPG" alt="МК">
+                    <h3>Сотрудничаю с визажистами и стилистами</h3>
+                    <p>Часто приглашают моделью визажисты и стилисты по прическам. Была моделью на МК</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- Секция 4 -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2>Мои навыки</h2>
+            <div class="skill-cards">
+                <div class="card">
+                    <img src="catwalk.jpg" alt="Catwalk Icon">
+                    <h3>Подиумная ходьба</h3>
+                    <p>Профессионально владею техникой подиумной ходьбы для модных показов</p>
+                </div>
+                <div class="card">
+                    <img src="pose.jpg" alt="Pose Icon">
+                    <h3>Постановка поз</h3>
+                    <p>Владею искусством позирования для создания выразительных и запоминающихся образов</p>
+                </div>
+                <div class="card">
+                    <img src="make.jpg" alt="Makeup Icon">
+                    <h3>Визаж и макияж</h3>
+                    <p>Навыки самостоятельного визажа и макияжа для различных мероприятий и съемок</p>
+                </div>
+                <div class="card">
+                    <img src="photoshoot.jpg" alt="Photoshoot Icon">
+                    <h3>Фотосессии</h3>
+                    <p>Опыт работы с ведущими фотографами для рекламных и модных фотосессий</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция 5 -->
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Свяжитесь со мной через социальные сети или отправьте сообщение по электронной почте</p>
+            <ul class="contact-info">
+                <li>Email: <a href="mailto:dashulya00024@gmail.com">dashulya00024@gmail.com</a></li>
+                <li>Instagram: <a href="https://www.instagram.com/daria_yalovskaya/profilecard/?igsh=bTByd2t5NXJtejd1" target="_blank">@daria_yalovskaya</a></li>
+            </ul>
+            
+
+            <!-- Форма обратной связи -->
+            <form class="contact-form" action="https://getform.io/f/bkkkxerb" method="POST">
+                <p>Здесь вы можете задать мне вопрос или оставить отзыв о сайте</p>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Отправить</button>
+            </form>
+            
+        </br>
+            <a href="#hero" class="image-button"><img src="up.png" alt="В начало"></a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

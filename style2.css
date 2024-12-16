@@ -1,0 +1,462 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Стили для навигационного меню */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-menu {
+    display: none; /* Скрываем бургер-меню на больших экранах */
+    align-items: center;
+}
+
+.burger-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row; /* Отображаем меню горизонтально на больших экранах */
+    /*flex-direction: column;   
+    display: none;*/
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.nav-menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('me.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-content h1 {
+    margin: 0;
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #e0e0e0;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1, h3, p, .cta-button {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+h1 {
+    animation-delay: 0.2s;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    animation-delay: 0.4s;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    animation-delay: 0.6s;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.buttons { 
+    display: flex; 
+    gap: 10px;  
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9c5b5b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+    animation-delay: 0.8s;
+}
+
+.cta-button:hover {
+    background-color: #d87e7e;
+}
+
+.image-container {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+    animation-delay: 1s;
+}
+
+.profile-photo {
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(214, 127, 127, 0.986);
+    max-width: 300px;
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;        
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.achievements {
+    display: flex;
+    flex-wrap: wrap;   
+    padding: 50px 0;
+    background: linear-gradient(to bottom, #9c5b5b, #e0e0e0, #9c5b5b);
+    color: #000000;
+}
+
+.achievements .container {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.achievements h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.achievement-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px; 
+}
+
+.card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.card img {
+    width: 100%;
+    height: 380px; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skills {
+    padding: 50px 0;
+    background-color: #e0e0e0; 
+    color: #333;
+}
+
+.skills .container {
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.skill-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    gap: 20px;
+    justify-content: center; /* Центрируем карточки */
+}
+
+.skill-cards .card {
+    background-color: #9c5b5b;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 280px; /* Ограничение ширины карточки */
+}
+
+.skill-cards .card img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.skill-cards .card h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+.skill-cards .card p {
+    font-size: 16px;
+    color: #e6e6e6;
+}
+
+.skill-cards .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact {
+    padding: 50px 0; 
+    background-color: #fff; 
+    color: #333; 
+} 
+
+.contact .container { 
+    max-width: 800px; 
+    width: 90%; 
+    margin: 0 auto; 
+    text-align: center; 
+} 
+
+.contact h2 { 
+    font-size: 36px; 
+    margin-bottom: 20px; 
+} 
+
+.contact p { 
+    font-size: 18px; 
+    margin-bottom: 30px; 
+} 
+
+.contact-info { 
+    list-style-type: none; 
+    padding: 0; 
+    font-size: 18px; 
+} 
+
+.contact-info li { 
+    margin-bottom: 10px; 
+} 
+
+.contact-info a { 
+    color: #9c5b5b; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+} 
+
+.contact-info a:hover { 
+    color: #d87e7e; 
+} 
+
+.contact-form {
+    background-color: #d4b4b4dc; /* Светло-розовый фон */ 
+    padding: 20px; 
+    border: 2px solid #9c5b5b; /* Красивая рамочка */ 
+    border-radius: 10px; 
+    margin: 20px 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #9c5b5b;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #d87e7e;
+}
+
+.image-button img {
+    width: 50px;
+    height: 50px;
+}
+
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+    }
+    .nav-menu.show { 
+        display: flex; /* Отображаем меню при открытии */ 
+    }
+    .nav-menu li {
+        margin: 0 15px;
+    }
+    .nav-menu a {
+        padding: 10px 15px;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievement-cards {
+        width: 280px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievements .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skills .container, .achievements .container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .skill-cards {
+        /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .skill-cards .card {
+        width: 100%;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
